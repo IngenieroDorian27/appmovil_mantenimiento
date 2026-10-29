@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/color2"
+    tools:context=".phonecare.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema Mantenimiento"
+        android:id="@+id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/color8"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/Icono"
+        android:src="@drawable/logo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        android:layout_marginTop="50dp"
+        >
+    </ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Icono"
+        android:hint="Ingrese Usuario"
+        android:layout_marginTop="40dp"
+        android:id="@+id/etUsuario"
+        android:textColorHint="@color/color11"
+        android:textColor="@color/color11"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario"
+        android:hint="Ingrese Contraseña"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etContra"
+        android:textColorHint="@color/color11"
+        android:textColor="@color/color11"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContra"
+        android:layout_marginTop="30dp"
+        android:text="Ingresar"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/color8"
+        android:backgroundTint="@color/color5"
+        android:id="@+id/btnLogin"
+        >
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

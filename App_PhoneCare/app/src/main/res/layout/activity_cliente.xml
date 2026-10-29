@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/color13"
+    tools:context=".phonecare.Cliente.ClienteActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Sistema Mantenimiento"
+        android:textSize="30sp"
+        android:textColor="@color/color5"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        tools:text="Telefono"
+        android:textSize="20sp"
+        android:textColor="@color/color5"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvRequisito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTelefono"
+        tools:text="Requisito"
+        android:textSize="20sp"
+        android:textColor="@color/color5"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvAccesorios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRequisito"
+        tools:text="Accesorios"
+        android:textSize="20sp"
+        android:textColor="@color/color5"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAccesorios"
+        tools:text="Estado"
+        android:textSize="20sp"
+        android:textColor="@color/color5"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        >
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etComentario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEstado"
+        android:hint="Ingrese Comentario"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        >
+
+    </EditText>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnComentario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etComentario"
+        android:layout_marginTop="20dp"
+        android:text="Comentar"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/color9"
+        >
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
